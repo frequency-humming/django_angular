@@ -1,0 +1,11 @@
+<h1>Manchester Houses</h1>
+<h3>Pick one</h3>
+
+<!--<img [src]='image'> -->
+<div *ngFor="let house of houses.houses">
+    <img [src]='house.pictures'>
+    <h1>House code: {{house.id}}</h1>
+    <h1>Rooms: {{house.rooms}}</h1>
+    <h1>Street Address: {{house.street}}</h1>
+    <h1>City: {{house.city}}</h1>
+</div>

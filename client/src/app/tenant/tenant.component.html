@@ -1,0 +1,9 @@
+<div>
+  <h2>Welcome Tenants</h2>
+  <p>Share a picture or a comment</p>
+  <input type="file" name="image" (change)="changeImage($event)" />
+</div>
+
+<div *ngFor="let picture of html_pics" class="pic">
+  <img [src]='picture'>
+</div>

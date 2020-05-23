@@ -1,0 +1,37 @@
+<h1>Rentals Management</h1>
+<!--
+<button type="button" class="btn btn-primary" name='getPapayas' (click)='getPapayas()'>Get all Houses</button>
+
+<button name='makePapayas' (click)='makePapayas()'>Make some papayas</button>
+
+<input type="file" name="image" (change)="changeImage($event)" /> 
+
+
+<img *ngFor="let item of base64"  src={{item}} alt="" id="img">
+-->
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" [routerLink]="['/home']">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/home']">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/hartford']">Hartford</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/manchester']">Manchester</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<router-outlet></router-outlet>
+
+

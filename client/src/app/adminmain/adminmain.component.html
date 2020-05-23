@@ -1,0 +1,92 @@
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>Add House</h2>
+        <form (submit)="onSubmitHouse()">
+          <div class="form-group">
+            <label>Street</label>
+            <input type="text" class="form-control" aria-describedby="streetHelp" placeholder="Enter street" name="house.street" [(ngModel)]="house.street">
+            <small id="streetHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <label>City</label>
+            <input type="text" class="form-control" placeholder="city" name="house.city" [(ngModel)]="house.city">
+          </div>
+          <div class="form-group">
+            <label>Zip Code</label>
+            <input type="text" class="form-control" placeholder="zip code" name="house.zipcode" [(ngModel)]="house.zipcode">
+          </div>
+          <div class="form-group">
+            <label>Rooms</label>
+            <input type="number" class="form-control" placeholder="rooms" name="house.rooms" [(ngModel)]="house.rooms">
+          </div>
+          <button type="submit" class="btn btn-primary">Add House</button>
+        </form>
+      </div>
+      <div class="col">
+        <h2>Add Room</h2>
+        <form (submit)="onSubmit()">
+          <div class="form-group">
+            <label>Price</label>
+            <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" name="room.price" [(ngModel)]="room.price">
+            <small id="emailHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <label>Available</label>
+            <input type="text" class="form-control" placeholder="yes or no" name="room.available" [(ngModel)]="room.available">
+          </div>
+          <div class="form-group">
+            <label>House</label>
+            <input type="text" class="form-control" placeholder="house" name="room.house" [(ngModel)]="room.house">
+          </div>
+          <button type="submit" class="btn btn-primary">Add Room</button>
+        </form>
+      </div>
+      <div class="col">
+          <h2>Add Tenant</h2>
+          <form (submit)="onSubmit()">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter first name" name="tenant.firstname" [(ngModel)]="tenant.firstname">
+              <small id="emailHelp" class="form-text text-muted"></small>
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter last name" name="tenant.lastname" [(ngModel)]="tenant.lastname">
+              <small id="emailHelp" class="form-text text-muted"></small>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" name="tenant.email" [(ngModel)]="tenant.email">
+              <small id="emailHelp" class="form-text text-muted"></small>
+            </div>
+            <div class="form-group">
+              <label>Age</label>
+              <input type="number" class="form-control" aria-describedby="emailHelp" placeholder="Enter age" name="tenant.age" [(ngModel)]="tenant.age">
+              <small id="emailHelp" class="form-text text-muted"></small>
+            </div>
+            <div class="form-group">
+              <label>phone</label>
+              <input type="number" class="form-control" aria-describedby="emailHelp" placeholder="Enter phone" name="tenant.phone" [(ngModel)]="tenant.phone">
+              <small id="emailHelp" class="form-text text-muted"></small>
+            </div>
+            <div class="form-group">
+              <label>job</label>
+              <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter job" name="tenant.job" [(ngModel)]="tenant.job">
+              <small id="emailHelp" class="form-text text-muted"></small>
+            </div>
+            <div class="form-group">
+              <label>house</label>
+              <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter job" name="tenant.house" [(ngModel)]="tenant.house">
+              <small id="emailHelp" class="form-text text-muted"></small>
+            </div>
+            <div class="form-group">
+              <label>room</label>
+              <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter job" name="tenant.room" [(ngModel)]="tenant.room">
+              <small id="emailHelp" class="form-text text-muted"></small>
+            </div>
+            <button type="submit" class="btn btn-primary">Add tenant</button>
+          </form>
+      </div>
+    </div>
+  </div>
